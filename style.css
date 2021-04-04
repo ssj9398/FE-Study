@@ -50,7 +50,15 @@ a {
 
 .navbar__menu li {
   padding: 8px 12px;
+  flex-direction: column;
 }
+.navbar__menu li ul{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
 
 .navbar__menu li:hover {
   background-color: var(--accent-color);
@@ -75,6 +83,9 @@ a {
   right: 32px;
   font-size: 24px;
   color: var(--accent-color);
+}
+.navbar__menu li ul.active{
+    display: flex;
 }
 
 /* For small screen */
@@ -115,5 +126,9 @@ a {
   .navbar__menu.active,
   .navbar__icons.active {
     display: flex;
+  }
+
+  .navbar__menu li ul.active{
+      display: flex;
   }
 }
