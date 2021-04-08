@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css" />
-    
-    <title>Document</title>
+    <title>VS CODE에서 JSP 동작시키기</title>
 </head>
 <body>
-    <p>html 기초부터 다시 보자 (css에 의해 꾸며짐)</p>
+    <h1> test.jsp 페이지입니다.</h1>
 </body>
-<script src="test.js"></script>
 </html>
