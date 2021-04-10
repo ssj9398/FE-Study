@@ -12,7 +12,6 @@
 
 ## 브라우저 이동
 - window.location.href="https://naver.com"
-- 
 
 ## 브라우저 정보
 - window.navigator
@@ -22,6 +21,6 @@
 
 ## html, css 접근 가능
 - window.document
-  document.body
+- document.body
 - document.head
 - document.stylesheets
