@@ -24,3 +24,8 @@
 - document.body
 - document.head
 - document.stylesheets
+
+## css 우선순위
+1. 태그에 직접입력
+2. 헤드태그 style 입력
+3. link 입력
