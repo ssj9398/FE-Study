@@ -30,6 +30,8 @@
 2. 헤드태그 style 입력
 3. link 입력
 
+
+
 # DOM 
 1. TREE형태
 2. html의 children tag는 head, body 반대로 head, body의 parent 태그는 html
@@ -40,6 +42,8 @@
 - .nextElementSibling  같은 레벨의 형제 엘리먼트 적근법
 - .previousElementSibling 같은 레벨의 형제 엘리먼트 적근법
 
+
+
 ## 단일 Element
 1. document.getElementById("아이디명");
 - 아이디명이라는 id 태그를 통째로 가져온다.
@@ -49,10 +53,14 @@
 - t.innerTEXT 텍스트만 보여짐
 - t.getAttribut="src값" 하면 값을 가져올 수 있음 (속성)
 
+
+
 ## 다중 Element (배열로 반환됨)
 - document.getElementsBy  (ClassName, Name, TagName)
 - .value로 값을 가져올수 있음
 - .getAttribute("value"); 로는 value 값을 가져올 수 없음 (input태그에 입력된 값과 html은 동기화가 되지 않기 때문)
+
+
 
 ## css Selector
 1. document.querySelector
@@ -62,12 +70,16 @@
 * id를 사용한 경우 # , class는 .classname , 태그를 활용한 경우 태그명
 - ex) document.querySelector(# or . or p);
 
+
+
 ## Element 추가/삭제
 1. 생성 : test = document.createElement("test");
 2. 추가 : document.body.appendChild(test);
 3. 원하는위치에 추가 : document.body.insertBefor( test, document.body.children[3]); 태그명, 위치
 4. Element 복사 : test2 = test.cloneNode();    document.body.insertBefor( test2, document.body.children[6]);
 5. 삭제 : document.body.removeChild(test2);
+
+
 
 ## callback function
 - 조건 등록해두고 만족하면 나중에 호출하는 함수
@@ -85,10 +97,14 @@ es) function callback(){
 * 처음 실행한 것 부터 id 1~ 쭉 들어가게 되며 이 아이디로 취소를 시킬 수 있다.
 - ex) clearInterval(1);
 
+
+
 ## 브라우저에서 발생하는 이벤트 종류와 핸들링 하는 방법
 1. form(form element에 변화가 생기거나 submit 버튼을 누를 경우 발생), window(페이지가 모두 로드 되었을때 onload가 대표적), mouse, key Event가 있다.
 2. 이벤트가 발생하고 해당 핸들러가 호출되는과정을 이벤트가 fire 된다거나 트리거라고도 한다.
 3. onclick, onchange, onkeydown 등 이 있다.
+
+
 
 ## EventHandler를 등록하는 방법
 1. property에 직접 Handler설정
@@ -110,6 +126,8 @@ es) function callback(){
 addEventListener를 사용 할때는 on을 붙이지 않고 event 이름만 문자열로 준다.
 addEventListener는 여러개의 event handler를 추가하기 때문에 a,b function 둘다 나온다.
 
+
+
 ## javascript http request를 보낼 수 있는 ajax
 - 페이지를 이동하지 않고도 서버에서 새로운 데이터를 가져올 수 있고, 브라우저에 데이터를 서버로 보낼 수 있음
 - AJAX는 비동기임 요청할때만 응답함
@@ -118,4 +136,6 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
         req.open("GET", "./data.txt");
         req.send();
     </script>
+
+    
 ## AJAX - Response 받아서 처리하기
