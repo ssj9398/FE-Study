@@ -118,4 +118,4 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
         req.open("GET", "./data.txt");
         req.send();
     </script>
-## 
+## AJAX - Response 받아서 처리하기
