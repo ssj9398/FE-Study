@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="GET" action="b.html" id="form1" onsubmit="console.log('from tag'); return false;">
+        이름 : <input type="text" name="id"><br>
+        메세지 : <input type="text" name="msg"><br>
+        <input type="submit">
+    </form>
+
+    <!--script로 onsubmit event handler 등록 방법 위 코드는 덮어 씌워지기때문에 아랫 내용이 보이게됨 -->
+    <script>
+        var t = document.getElementById("form1");
+        t.onsubmit = function a() {
+            console.log("property");
+            return false;
+        }
+        function b() {
+            console.log("addEventListener");
+        }
+        t.addEventListener("submit",b);
+        t.removeEventListener("submit",b);
+
+    </script>
+</body>
+
+</html>
+addEventListener를 사용 할때는 on을 붙이지 않고 event 이름만 문자열로 준다.
+addEventListener는 여러개의 event handler를 추가하기 때문에 a,b function 둘다 나온다.

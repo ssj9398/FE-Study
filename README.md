@@ -70,3 +70,42 @@
 5. 삭제 : document.body.removeChild(test2);
 
 ## callback function
+- 조건 등록해두고 만족하면 나중에 호출하는 함수
+1. setTimeout
+-  setTimeout ( callback(콜백함수),시간(밀리세컨드 단위) ) 두개의 인자필요
+es) function callback(){
+    concol.log("This is callback function");
+}
+    setTimeout(callback, 3000);
+- 3초뒤 콜백함수가 실행됨
+
+2. setInterval(callback, 5000);
+- 5초마다 계속 호출
+
+* 처음 실행한 것 부터 id 1~ 쭉 들어가게 되며 이 아이디로 취소를 시킬 수 있다.
+- ex) clearInterval(1);
+
+## 브라우저에서 발생하는 이벤트 종류와 핸들링 하는 방법
+1. form(form element에 변화가 생기거나 submit 버튼을 누를 경우 발생), window(페이지가 모두 로드 되었을때 onload가 대표적), mouse, key Event가 있다.
+2. 이벤트가 발생하고 해당 핸들러가 호출되는과정을 이벤트가 fire 된다거나 트리거라고도 한다.
+3. onclick, onchange, onkeydown 등 이 있다.
+
+## EventHandler를 등록하는 방법
+1. property에 직접 Handler설정
+- var t = document.getElementById("form1");
+        t.onsubmit = function a() {
+            console.log("property");
+            return false;
+        }
+
+2. addEventListener
+-   ex) function b() {
+            console.log("addEventListener");
+        }
+        t.addEventListener("submit",b);
+
+
+3. removeEventListener
+-   ex) t.removeEventListener("submit",b);
+addEventListener를 사용 할때는 on을 붙이지 않고 event 이름만 문자열로 준다.
+addEventListener는 여러개의 event handler를 추가하기 때문에 a,b function 둘다 나온다.
