@@ -109,3 +109,13 @@ es) function callback(){
 -   ex) t.removeEventListener("submit",b);
 addEventListener를 사용 할때는 on을 붙이지 않고 event 이름만 문자열로 준다.
 addEventListener는 여러개의 event handler를 추가하기 때문에 a,b function 둘다 나온다.
+
+## javascript http request를 보낼 수 있는 ajax
+- 페이지를 이동하지 않고도 서버에서 새로운 데이터를 가져올 수 있고, 브라우저에 데이터를 서버로 보낼 수 있음
+- AJAX는 비동기임 요청할때만 응답함
+- ex) <script>
+        var req = new XMLHttpRequest();
+        req.open("GET", "./data.txt");
+        req.send();
+    </script>
+## 
