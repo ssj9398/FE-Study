@@ -59,7 +59,8 @@
 - 가장 처음에 있는 값만 반환됨
 2. document.querySelectorAll (배열로 반환됨)
 - ex) document.querySelectorAll("h1,h2")
-* id를 사용한 경우 # , class는 .classname , 태그를 활용한 경우 태그명 ex) p 
+* id를 사용한 경우 # , class는 .classname , 태그를 활용한 경우 태그명
+- ex) document.querySelector(# or . or p);
 
 ## Element 추가/삭제
 1. 생성 : test = document.createElement("test");
