@@ -141,3 +141,7 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
 ## AJAX - Response 받아서 처리하기
 <img src="https://user-images.githubusercontent.com/48196352/114310085-780a4900-9b24-11eb-9ae4-6987ac9995bd.PNG" width="500">
 
+
+## JSON
+- 객체를 문자열로 표현하는 방법
+- 서버 -> 브라우저 전달하기 용이
