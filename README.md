@@ -1,7 +1,8 @@
 # practice
 ## index.html
 <img src="https://user-images.githubusercontent.com/48196352/113541252-cf885080-961c-11eb-8aa4-84cb4f662146.jpg" width="500">
-<img src="https://user-images.githubusercontent.com/48196352/113541257-d0b97d80-961c-11eb-9b61-6846355dc339.jpg" width="500">
+<img src="https://user-images.githubusercontent.com/48196352/113541257-d0b97d80-961c-11eb-9b61-6846355dc339.jpg" width="500">![b](https://user-images.githubusercontent.com/48196352/114428167-d273da00-9bf6-11eb-9c11-9773f7e38ffb.JPG)
+
 
 ## prompt, body.innerText
 ![image](https://user-images.githubusercontent.com/48196352/113957464-3ba3c800-985a-11eb-81e1-c6709e3b2732.png)
@@ -143,5 +144,7 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
 
 
 ## JSON
+
 - 객체를 문자열로 표현하는 방법
 - 서버 -> 브라우저 전달하기 용이
+- <img src="https://user-images.githubusercontent.com/48196352/114428223-e1f32300-9bf6-11eb-8bcc-2105a3da3b8f.JPG" width="500">
