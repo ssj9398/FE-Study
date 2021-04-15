@@ -88,6 +88,32 @@
       display: flex;
   }
   
+  .themed.active {
+    
+    width:max-content;
+    height :max-content;
+    background: rgb(161, 159, 159);
+    color: white;
+  }
+
+  html.dark{
+    background: #3a3b3d;
+    color: rgb(240, 234, 234);
+
+    
+    }
+    
+  }
+
+  
+  
+  @media (prefers-color-scheme: light) {
+    .themed.active {
+      background: white;
+      color: rgb(119, 115, 115);
+    }
+  }
+
   /* For small screen */
   @media screen and (max-width: 768px) {
     /* Nav container */
