@@ -20,3 +20,4 @@ themed.addEventListener('click', () => {
   themed.classList.toggle('active');
   document.documentElement.classList.toggle("dark")
 });
+

@@ -92,17 +92,42 @@
     
     width:max-content;
     height :max-content;
-    background: rgb(161, 159, 159);
-    color: white;
+    background: rgb(0, 0, 0);
+    
   }
 
+  html{
+    transition-duration: 0.6s;
+  }
   html.dark{
     background: #3a3b3d;
     color: rgb(240, 234, 234);
-
-    
+    transition-duration: 0.6s;
     }
     
+  .themed{
+    border-radius: 100px;
+
+    background-color: rgb(175, 173, 63);
+  
+    border: none;
+  
+    font-size: 28px;
+  
+    color: #FFFFFF;
+  
+    padding: 20px;
+  
+
+    -webkit-transition-duration: 0.6s; /* Safari */
+  
+    transition-duration: 0.6s;
+  
+  
+    overflow: hidden;
+  
+    cursor: pointer;
+
   }
 
   
