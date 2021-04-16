@@ -72,6 +72,9 @@
 - ex) document.querySelector(# or . or p);
 
 
+## 기타
+- document.body.scrollHeight  : 높이
+- $("html, body").animate({ scrollTop: document.body.scrollHeight }, "slow");  가장 아래로 천천히 이동
 
 ## Element 추가/삭제
 1. 생성 : test = document.createElement("test");
