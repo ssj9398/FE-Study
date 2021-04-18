@@ -161,6 +161,9 @@ header{
     cursor :grab;
   }
 
+  .mode__change{
+    display: flex;
+  }
 
   
   

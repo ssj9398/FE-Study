@@ -3,6 +3,7 @@ const menu = document.querySelector('.navbar__menu');
 const list = document.querySelector('.navbar__menu li ul');
 const icons = document.querySelector('.navbar__icons');
 const themed = document.querySelector('.themed');
+const navbar = document.querySelector('.navbar');
 
 
 toggleBtn.addEventListener('click', () => {
@@ -13,6 +14,7 @@ toggleBtn.addEventListener('click', () => {
 
 menu.addEventListener('click', () => {
     list.classList.toggle('active');
+    
    // icons.classList.toggle('active');
 });
 
@@ -21,3 +23,7 @@ themed.addEventListener('click', () => {
   document.documentElement.classList.toggle("dark")
 });
 
+/* navbar.addEventListener('mouseout', () => {
+  list.classList.toggle('active');
+ // icons.classList.toggle('active');
+}); */
