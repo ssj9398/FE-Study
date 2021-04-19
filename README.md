@@ -153,12 +153,29 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
 - <img src="https://user-images.githubusercontent.com/48196352/114428223-e1f32300-9bf6-11eb-8bcc-2105a3da3b8f.JPG" width="500">
 
 ## AJAX + JSON
+<<<<<<< HEAD
 1. AJAX를 통해 JSON으로 받기
 
+=======
+1. JAX를 통해 JSON으로 받기
+- <img src="https://user-images.githubusercontent.com/48196352/115251318-64cf2d00-a165-11eb-8b2c-668abaa02961.JPG" width="500">
+>>>>>>> 2dbce836ffd2179c089c022de98817b58e0cacbb
 2. JSON.PARE API를 이용해 받아온 JSON 문자열 데이터를 JAVASCRIPT 객체로 변환
-
+- <img src="https://user-images.githubusercontent.com/48196352/115251334-68fb4a80-a165-11eb-9e60-cda8fc59e860.JPG" width="500">
 3. 데이터를 처리하는 JAVASCRIPT 프로그램 실행
-
+- <img src="https://user-images.githubusercontent.com/48196352/115251346-6bf63b00-a165-11eb-8e35-6374b740a29e.JPG" width="500">
+ 
 ## css 색상, 이미지 반전
 - div { filter: invert(100%);}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2dbce836ffd2179c089c022de98817b58e0cacbb
+
+
+## SCRIPT위치에 따른 실행
+1. 브라우저는 HTML 문서를 읽으면서 script tag를 실행함
+
+- HTML 문서 Element 파싱 보다 스크립트가 먼저 실행되면 접근되지 않음
+- 페이지의 상단의 script 에서 이후 파싱될 Element에 접근하고 싶다면 onload 등의 eventhandler로 실행되도록 해야 함
+2. async, defer 속성을 이용하면 스크립트의 실행과 문서의 로딩을 동시에 진행할 수 있음(비 동기적)
