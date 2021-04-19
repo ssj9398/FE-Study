@@ -61,11 +61,22 @@ header{
         background-color: #3a3b3d;
         margin-left: 10px;
 }
+
+.contents{
+  display: inline-block; 
+  height: 100%; 
+  position: absolute; 
+  right: 0; 
+  overflow: hidden;
+  background-color: #3a3b3d;
+  margin-left: 20px;
+}
   
   a {
     text-decoration: none;
     color: #adbac7;
   }
+  
             
   /* Nav container */
   .navbar {

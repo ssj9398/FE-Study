@@ -151,3 +151,13 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
 - 객체를 문자열로 표현하는 방법
 - 서버 -> 브라우저 전달하기 용이
 - <img src="https://user-images.githubusercontent.com/48196352/114428223-e1f32300-9bf6-11eb-8bcc-2105a3da3b8f.JPG" width="500">
+
+## AJAX + JSON
+1. JAX를 통해 JSON으로 받기
+
+2. JSON.PARE API를 이용해 받아온 JSON 문자열 데이터를 JAVASCRIPT 객체로 변환
+
+3. 데이터를 처리하는 JAVASCRIPT 프로그램 실행
+
+## css 색상, 이미지 반전
+- div { filter: invert(100%);}

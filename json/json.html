@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+    <script>
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function a(){
+            console.log(this.readyState, this.status);
+            if(this.readyState ==4){
+                console.log(this.response);
+                var data = JSON.parse(this.response);
+                for(var i in data){
+                    var t = document.getElementById("template").cloneNode(true);
+                    t.removeAttribute("id");
+                    t.children[0].innerText = data[i].id;
+                    t.children[1].innerText = data[i].msg;
+                    document.body.appendChild(t);
+
+                }
+            }
+        }
+        req.open("GET","./jsondata.txt")
+        req.send();
+    </script>
+</head>
+<body>
+    <p id="template">
+        <span class="character">주인공 </span> :<span class="word">명대사</span>
+    </p>
+</body>
+</html>
