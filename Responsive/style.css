@@ -66,7 +66,7 @@ header{
     text-decoration: none;
     color: #adbac7;
   }
-  
+            
   /* Nav container */
   .navbar {
     display: flex;
@@ -75,7 +75,7 @@ header{
     padding: 8px 12px;
     background-color: var(--background-color);
   }
-  
+       
   /* Logo with text */
   .navbar__logo {
     font-size: 24px;
