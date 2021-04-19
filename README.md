@@ -178,4 +178,4 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
 
 - HTML 문서 Element 파싱 보다 스크립트가 먼저 실행되면 접근되지 않음
 - 페이지의 상단의 script 에서 이후 파싱될 Element에 접근하고 싶다면 onload 등의 eventhandler로 실행되도록 해야 함
-2. async, defer 속성을 이용하면 스크립트의 실행과 문서의 로딩을 동시에 진행할 수 있음(비 동기적)
+2. async, defer 속성을 이용하면 스크립트의 실행과 문서의 로딩을 동시에 진행할 수 있음(비 동기적) 
