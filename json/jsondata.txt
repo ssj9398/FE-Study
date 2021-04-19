@@ -1,0 +1,7 @@
+[
+    { "id": "5001", "msg" : "Regular" },
+    { "id": "5002", "msg" : "Chocolate" },
+    { "id": "5003", "msg" : "Blueberry" },
+    { "id": "5004", "msg" : "Devil's Food" },
+    { "id": "5005", "msg" : "Glazed" }
+]
