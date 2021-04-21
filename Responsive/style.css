@@ -65,7 +65,7 @@ header{
 .contents{
   display: inline-block; 
   height: 100%; 
-  position: absolute; 
+  
   right: 0; 
   overflow: hidden;
   background-color: #3a3b3d;
@@ -170,6 +170,37 @@ header{
     transition-duration: 0.6s;
     overflow: hidden;
     cursor :grab;
+    height: 20px;
+  }
+
+  .box{
+    width:100px;
+    height: 60px;
+    margin: 20px;
+    background-color: #adbac7;
+  }
+
+  .themed2:hover{
+    background-color:#d49466;
+    transition : background-color 300ms linear;
+    
+  }
+  .themed3:hover{
+    background-color:#d49466;
+    border-radius: 100%;
+    transition: all 2s ease;
+
+  }
+
+  .themed3.active{
+    transform: translate(400px);
+    transition: all 2s ease;
+  }
+  .themed4:hover{
+    background-color:#d49466;
+    transform: translate(400px);
+    transition: all 2s ease;
+
   }
 
   .mode__change{

@@ -4,6 +4,8 @@ const list = document.querySelector('.navbar__menu li ul');
 const icons = document.querySelector('.navbar__icons');
 const themed = document.querySelector('.themed');
 const navbar = document.querySelector('.navbar');
+const themed4 = document.querySelector('.themed4');
+
 
 
 toggleBtn.addEventListener('click', () => {
@@ -13,9 +15,9 @@ toggleBtn.addEventListener('click', () => {
 
 
 menu.addEventListener('click', () => {
-    list.classList.toggle('active');
-    
-   // icons.classList.toggle('active');
+  list.classList.toggle('active');
+
+  // icons.classList.toggle('active');
 });
 
 themed.addEventListener('click', () => {
@@ -27,3 +29,4 @@ themed.addEventListener('click', () => {
   list.classList.toggle('active');
  // icons.classList.toggle('active');
 }); */
+
