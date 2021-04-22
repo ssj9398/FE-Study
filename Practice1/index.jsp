@@ -69,7 +69,7 @@
       <h2>text4</h2>
       <p>text4 :<input type="text" name="fou"></p>
       <h2>text5</h2>
-      <p>text5 :<input type="text" name="fiv"></p>
+      <p>text5 :<input type="text" name="fiv" id="a"></p>
     </form>
 
     <a href="#">link</a>
@@ -80,7 +80,7 @@
 
 <script>
   var req = new XMLHttpRequest();
-  req.onreadystatechange = function a() {
+  req.onreadystatechange = function () {
     console.log(this.readyState, this.status);
     if (this.readyState == 4 && this.status == 200) {
       console.log(this.response);
@@ -88,6 +88,7 @@
   }
   req.open("GET", "./layout.jsp");
   req.send();
+  $("#a").value(req);
 </script>
 
 </html>
