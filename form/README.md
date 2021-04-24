@@ -7,3 +7,5 @@
 - name을 던지는 구만
 - form으로 던질땐 왠만하면 post로 하자
 - input type이 파일은 enctype="multipart/form-data" 이것을 사용해 주어야 한다.
+- autocomplete 자동완성, placeholder 텍스트위에 예시
+- autofocus 자동 1번태크 포커싱
