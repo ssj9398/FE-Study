@@ -74,9 +74,9 @@
                 </p>
             </label>
             <p>
-                <input type="checkbox" name="checkbox" value="">
-                <input type="checkbox" name="checkbox" value="">
-                <input type="checkbox" name="checkbox" value="">
+            <p><input type="checkbox" name="checkbox1" value="10">10</p>
+            <p><input type="checkbox" name="checkbox2" value="50">50</p>
+            <p><input type="checkbox" name="checkbox3" value="100">100</p>
 
             </p>
             <label>
