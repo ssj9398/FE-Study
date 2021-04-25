@@ -74,9 +74,10 @@
                 </p>
             </label>
             <p>
-            <p><input type="checkbox" name="checkbox1" value="10">10</p>
-            <p><input type="checkbox" name="checkbox2" value="50">50</p>
-            <p><input type="checkbox" name="checkbox3" value="100">100</p>
+            <p><input type="checkbox" name="checkbox1" value="10">10
+                <input type="checkbox" name="checkbox2" value="50">50
+                <input type="checkbox" name="checkbox3" value="100">100
+            </p>
 
             </p>
             <label>
@@ -106,7 +107,7 @@
             <p>zip address 2 : <input type="text" id="ofceAddr2" name="ofceAddr2"></p>
             <p><a href="javascript:fn_execPostCode();">addreschoice</a></p>
 
-            <input type="submit" value="Join">
+            <input type="submit" value="SubmitButton">
 
         </form>
 
