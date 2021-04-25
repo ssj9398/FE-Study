@@ -1,4 +1,5 @@
 ## form이란
+- <img src="https://user-images.githubusercontent.com/48196352/115980728-d83fc700-a5c9-11eb-8e91-0546f0b89158.JPG" width="500">
 - 사용자가 입력한 것들을 서버로 전송 하는것
 - ex) http://localhost:80/main.jsp?id=ssj&pwd=1111&addr=seoul
 - 모든 form 태그에는 name이 있어야한다.
