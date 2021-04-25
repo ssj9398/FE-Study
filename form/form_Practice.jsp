@@ -74,9 +74,9 @@
                 </p>
             </label>
             <p>
-            <p><input type="checkbox" name="checkbox1" value="10">10
-                <input type="checkbox" name="checkbox2" value="50">50
-                <input type="checkbox" name="checkbox3" value="100">100
+            <p><label><input type="checkbox" name="checkbox1" value="10">10</label>
+                <label> <input type="checkbox" name="checkbox2" value="50">50</label>
+                <label> <input type="checkbox" name="checkbox3" value="100">100</label>
             </p>
 
             </p>
@@ -105,7 +105,7 @@
             <p>zip code : <input path="newZip" readonly="true" /></p>
             <p>zip address 1 : <input path="ofceAddr1" readonly="true" /></p>
             <p>zip address 2 : <input type="text" id="ofceAddr2" name="ofceAddr2"></p>
-            <p><a href="javascript:fn_execPostCode();">addreschoice</a></p>
+            <p><button type=""><a href="javascript:fn_execPostCode();">kakaoapi</a></button></p>
 
             <input type="submit" value="SubmitButton">
 
