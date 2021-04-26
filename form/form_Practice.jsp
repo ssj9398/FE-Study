@@ -100,7 +100,9 @@
             <p>
                 <input type="range" name="range">
             </p>
-
+            <p>
+                <input type="file" name="profile">
+            </p>
             <p>zip code : <input path="newZip" readonly="true" /></p>
             <p>zip address 1 : <input path="ofceAddr1" readonly="true" /></p>
             <p>zip address 2 : <input type="text" id="ofceAddr2" name="ofceAddr2"></p>
