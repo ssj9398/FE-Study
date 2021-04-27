@@ -10,3 +10,5 @@
 - input type이 파일은 enctype="multipart/form-data" 이것을 사용해 주어야 한다.
 - autocomplete 자동완성, placeholder 텍스트위에 예시
 - autofocus 자동 1번태크 포커싱
+- required 필수값 체크
+- pattern으로 정규식 가능    ([a-zA-Z].+ 하나당 한글자)  . 은 어떤문자든, + 는 어떤것이든 하나는 입력되야함
