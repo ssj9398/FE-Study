@@ -91,7 +91,8 @@
 
             </p>
             <label>
-                <p>Email : <input type=" email" name="email" placeholder="Input Email"></p>
+                <p>Email : <input type=" email" name="email" placeholder="Input Email" required
+                        pattern="[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]"></p>
             </label>
             <label>
                 <p> age :
