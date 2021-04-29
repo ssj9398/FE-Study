@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="UTF-8">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="EUC-KR" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css?01" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
@@ -91,10 +91,10 @@
 
             </p>
             <label>
-                <p>Email : <input type=" email" name="email" placeholder="Input Email" required
+                <p>email : <input type=" email" name="email" placeholder="Input Email" required
                         pattern="[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]"></p>
             </label>
-            <label>test
+            <label>
                 <p> age :
                     <input type="number" name="age" max="100" min="1">
                 </p>
