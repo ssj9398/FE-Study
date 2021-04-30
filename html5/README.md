@@ -3,8 +3,8 @@
 - ol, ul, dl이 있으며, ol과 ul은 li  dl은  dt와 한쌍이다.
 - 제목h, 목록(ul, ol, dl), 표(table tr td), 폼 form 인지 확인하면 좀 빠르다.
 - 이도저도 아니다? 그럼 div를 써주자
-- chrome스토어에 html코드만 보이게 하는 도구가 있다.
-- chrome스토어에 아웃라인 잡아주는 도구가 있다. 우선 연습 해보고 쓰도록 하자.
+- chrome스토어에 html코드만 보이게 하는 도구가 있다. web developer
+- chrome스토어에 아웃라인 잡아주는 도구가 있다. 우선 연습 해보고 쓰도록 하자.   html5 outliner
 
 2. section태그
 - 넘버링(h1,h2~~) 새출발 하고 싶다 그럼 section을 쓰자 h1부터 다시 시작
