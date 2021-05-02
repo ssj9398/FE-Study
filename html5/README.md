@@ -34,5 +34,14 @@
 - #main-menu>a{}    :  main-menu에 자식에 해당하는 a태그만
 
 8. silbling 연산자
-- #main-menu+.a{} : 동일 레벨태그에 바로 이웃하는 a클래스명
+- #main-menu+.a{} : 동일 레벨태그에 바로 이웃(인접)하는 a클래스명
 - #main-menu~.a{} : 동일 레벨태그에  a클래스명
+
+9. 속성 선택자
+- 링크 : a[href], a[href="a.html"]
+
+10. selector 우선순위
+- id -> tag -> class
+
+11. 스타일 링크하기
+- 공통은 style.css

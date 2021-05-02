@@ -1,0 +1,4 @@
+#main-menu>ul>li.first~.aa {
+            font-size: 30px;
+            color: aqua;
+        }
