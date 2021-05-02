@@ -28,3 +28,7 @@
 
 6. selector
 - 태그명, id, class이용이 가장 기본
+
+7. 콤비네이션 연산자
+- #main-menu a{}    :  a태그에 해당하는 모든것
+- #main-menu>a{}    :  main-menu에 자식에 해당하는 a태그만
