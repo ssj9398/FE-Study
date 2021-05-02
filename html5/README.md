@@ -16,3 +16,9 @@
 - a - 링크, b - 글자 두껍게, u -  밑줄
 - 구글에 inline태그 검색하면 모질라 사이트에 많이 나옴
 
+4. 순서
+-  전체적인 구조(제목, 목록, 표, 폼 외에는 div)를 잡기
+- div로 각 영역별로 묶어주기
+- header main  footer로 묶어주기
+- section(nav, article, aside 나눠주기)
+- a태그 링크 걸어주기
