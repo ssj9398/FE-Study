@@ -32,3 +32,7 @@
 7. 콤비네이션 연산자
 - #main-menu a{}    :  a태그에 해당하는 모든것
 - #main-menu>a{}    :  main-menu에 자식에 해당하는 a태그만
+
+8. silbling 연산자
+- #main-menu+.a{} : 동일 레벨태그에 바로 이웃하는 a클래스명
+- #main-menu~.a{} : 동일 레벨태그에  a클래스명
