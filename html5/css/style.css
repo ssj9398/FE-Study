@@ -1,9 +1,20 @@
 @import url("reset.css");
+
+.content-box{
+        background: #ff000020;
+        height: inherit;
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    /*--------°øÅë---------------------------------*/
 #header{
     height: 70px;
     background: yellow;
 }
-
+    
 #visual{
     height: 171px;
     background: red;
