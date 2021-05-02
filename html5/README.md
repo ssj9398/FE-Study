@@ -25,3 +25,6 @@
 
 5. 스타일 속성
 - mozila 활용 (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+6. selector
+- 태그명, id, class이용이 가장 기본
