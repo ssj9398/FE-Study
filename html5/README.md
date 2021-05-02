@@ -45,3 +45,13 @@
 
 11. 스타일 링크하기
 - 공통은 style.css
+- html기본 스타일 없앤 것 reset.css (만들어 줘야함)
+
+12. style 평준화 방법
+1. reset.css
+2. 구버전 브라우저 셀렉터 안먹으면 html5shiv
+
+13. 레이아웃 블록 (스타일 적용 순서)
+1. 큰방부터 꾸민다
+2. reset 파일 생성한다.
+- style.css 안에 reset.css를 import하는게 깔끔하다. 단 속도가 느려질 경우 똑같이 link를 걸어서 쓰자
