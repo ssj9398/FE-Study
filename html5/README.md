@@ -22,3 +22,6 @@
 - header main  footer로 묶어주기
 - section(nav, article, aside 나눠주기)
 - a태그 링크 걸어주기
+
+5. 스타일 속성
+- mozila 활용 (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
