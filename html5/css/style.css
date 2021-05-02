@@ -1,4 +1,19 @@
-#main-menu>ul>li.first~.aa {
-            font-size: 30px;
-            color: aqua;
-        }
+#header{
+    height: 70px;
+    background: yellow;
+}
+
+#visual{
+    height: 171px;
+    background: red;
+}
+
+#body{
+    height: 300px;
+    background: black;
+}
+
+#footer{
+    height: 100px;
+    background: blue;
+}
