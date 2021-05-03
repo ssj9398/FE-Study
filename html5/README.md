@@ -59,6 +59,12 @@
 - 부모의 크기를 따라간다 -inherit
 4. 세번째 방 설정하기
 - 한줄한줄씩 포지션이 지정될때 오른쪽에 위치하고 싶다 그럼 display : flex를 사용하자
+5. 방 배치
+1. absolute
+- left나 right top bottom 을 사용하려면 absolute : static(default)를 먼저 사용해 주어야 한다.  (절대위치)
+
+2. relative 부모가 이걸 가지고 있으면 부모기준의 위치가됨
+
 
 14. 색상
 - Alpha Channel : rgb(255,255,0);인데 rgba(255,255,0,0.2);   0.2는 투명도임
