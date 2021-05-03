@@ -1,30 +1,44 @@
 @import url("reset.css");
 
-#header{
-    height: 70px;
-    background: greenyellow;
-    position:sticky;
-    width: 100%;
-    top: 0px;
+body{
+    height: 100%;
 }
 
-#S1 ul{
-    background: yellowgreen;
+.S1{
+    height: 100%;
+}
+
+.S1 ul{
+    display: flex;
+    background: gray;
+    height: 400px;
+    align-items: center;
+}
+
+.S1 li{
+    flex-basis:100px;
+    position: relative;
+    left: 10px;
+}
+
+.S1 li:nth-child(1){
+    background: red;
+    align-self: flex-end;
 
 }
 
-#S1 li:nth-child(1){
-    background: rgb(44, 163, 123);
-
-
+.S1 li:nth-child(2){
+    background: rgb(238, 255, 0);
 }
 
-#S1 li:nth-child(2){
-    background: green;
-
+.S1 li:nth-child(3){
+    background: rgb(0, 255, 55);
 }
 
-#S1 li:nth-child(3){
-    background: blue;
+.S1 li:nth-child(4){
+    background: rgb(0, 47, 255);
+}
 
+.S1 li:nth-child(5){
+    background: rgb(255, 0, 170);
 }
