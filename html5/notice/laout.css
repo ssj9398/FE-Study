@@ -1,16 +1,21 @@
 @import url("reset.css");
 
+#header{
+    height: 70px;
+    background: greenyellow;
+    position:sticky;
+    width: 100%;
+    top: 0px;
+}
+
 #S1 ul{
     background: yellowgreen;
-    height: 300px;
-    position: relative;
+
 }
 
 #S1 li:nth-child(1){
     background: rgb(44, 163, 123);
-    position: relative;
-    right: 0;
-    top: 0px;
+
 
 }
 
