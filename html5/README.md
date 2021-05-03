@@ -78,5 +78,19 @@
 - Alpha Channel : rgb(255,255,0);인데 rgba(255,255,0,0.2);   0.2는 투명도임
 
 ## flex
-- flex-direction : row or column 너비 높이만
+- flex-direction : row or column 너비 높이만 (방향 설정)
 - flex-basis : 어떤방향이든 너비가 동일하게됨 (방향성에 따라)
+- flex-grow : 여백을 나눠가짐 뒤에 값은 몇대몇대몇으로 나눌것인가의 값
+- flex-shrink : 기본적으로 1을 가지며(동일하게 줄어들고 늘어남)  0이 될 경우 고정
+- flex-wrap : nowrap  을 이용하여 한줄로 표현되다가 두번째줄로 내려가는걸 방지하여 오른쪽으로 스크롤을 할 수 있게 만들어줌
+
+축약표현
+- flex-grow:0;   flex-shrink: 0;  flex-basis : 100px;   ->  flex : 1 1 100px;
+
+## Ordering
+- 위치 정렬? 느낌 순서 정함 기본값 0
+
+## 박스 정렬 Alignment
+- 메인축에 해당하는 정렬 방식 justify - content
+- align-items : 수직 정렬  baseline 글자에 밑줄 맞춤 (각층 마다 )
+- align-content 수직내용 정렬에 사용 (하나로 묶음)
