@@ -51,7 +51,7 @@
 1. reset.css
 2. 구버전 브라우저 셀렉터 안먹으면 html5shiv
 
-13. 레이아웃 블록 (스타일 적용 순서)
+## 레이아웃 블록 (스타일 적용 순서)
 1. 큰방부터 꾸민다
 2. reset 파일 생성한다.
 - style.css 안에 reset.css를 import하는게 깔끔하다. 단 속도가 느려질 경우 똑같이 link를 걸어서 쓰자
@@ -60,11 +60,16 @@
 4. 세번째 방 설정하기
 - 한줄한줄씩 포지션이 지정될때 오른쪽에 위치하고 싶다 그럼 display : flex를 사용하자
 5. 방 배치
+## Position
 1. absolute
-- left나 right top bottom 을 사용하려면 absolute : static(default)를 먼저 사용해 주어야 한다.  (절대위치)
+- left나 right top bottom 을 사용하려면 position : absolute(default : static 수직 나열)를 먼저 사용해 주어야 한다.  (절대위치)
+- relative 부모가 이걸 가지고 있으면 부모기준의 위치가됨
 
-2. relative 부모가 이걸 가지고 있으면 부모기준의 위치가됨
+2. relative
+- 현재위치의 얼마만큼, 나보다 작은 동생들은 내가 원래 있던 위치에 오지 못함
 
+3. fixed
+- 
 
-14. 색상
+13. 색상
 - Alpha Channel : rgb(255,255,0);인데 rgba(255,255,0,0.2);   0.2는 투명도임
