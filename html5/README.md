@@ -76,3 +76,7 @@
 
 13. 색상
 - Alpha Channel : rgb(255,255,0);인데 rgba(255,255,0,0.2);   0.2는 투명도임
+
+## flex
+- flex-direction : row or column 너비 높이만
+- flex-basis : 어떤방향이든 너비가 동일하게됨 (방향성에 따라)
