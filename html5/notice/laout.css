@@ -13,12 +13,16 @@ body{
     background: gray;
     height: 400px;
     align-items: center;
+    /* width: 1161px; */
+    flex-shrink: 1;
 }
 
 .S1 li{
-    flex-basis:100px;
-    position: relative;
     left: 10px;
+    background: rgb(22, 102, 58);
+    flex-grow: 1;
+    width: 165.3px;
+    
 }
 
 .S1 li:nth-child(1){
