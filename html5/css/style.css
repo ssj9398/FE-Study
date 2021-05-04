@@ -17,15 +17,33 @@
     
 #visual{
     height: 171px;
-    background: red;
+    background: red,20;
 }
 
 #body{
+    
     height: 300px;
     background: black;
 }
+
+    #body>.content-box{
+        display: flex;
+    }
+
+    #aside{
+        height: inherit;
+        width:205px;
+        background: red;
+    }
+
+    #main{
+        height: inherit;
+        width: 750px;
+        background: yellowgreen;
+    }
 
 #footer{
     height: 100px;
     background: blue;
 }
+

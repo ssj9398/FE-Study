@@ -51,12 +51,46 @@
 1. reset.css
 2. 구버전 브라우저 셀렉터 안먹으면 html5shiv
 
-13. 레이아웃 블록 (스타일 적용 순서)
+## 레이아웃 블록 (스타일 적용 순서)
 1. 큰방부터 꾸민다
 2. reset 파일 생성한다.
 - style.css 안에 reset.css를 import하는게 깔끔하다. 단 속도가 느려질 경우 똑같이 link를 걸어서 쓰자
 3. 작은방 설정하기
 - 부모의 크기를 따라간다 -inherit
+4. 세번째 방 설정하기
+- 한줄한줄씩 포지션이 지정될때 오른쪽에 위치하고 싶다 그럼 display : flex를 사용하자
+5. 방 배치
+## Position
+1. absolute
+- left나 right top bottom 을 사용하려면 position : absolute(default : static 수직 나열)를 먼저 사용해 주어야 한다.  (절대위치)
+- relative 부모가 이걸 가지고 있으면 부모기준의 위치가됨
 
-14. 색상
+2. relative
+- 현재위치의 얼마만큼, 나보다 작은 동생들은 내가 원래 있던 위치에 오지 못함
+
+3. fixed
+- 화면에 정해진 좌표에 고정 absoute는 정해진 위치에 고정이라 좀 다르다.
+
+4. sticky
+- 화면을 내려도 상단에 고정, top을 지정해줘야함
+
+13. 색상
 - Alpha Channel : rgb(255,255,0);인데 rgba(255,255,0,0.2);   0.2는 투명도임
+
+## flex
+- flex-direction : row or column 너비 높이만 (방향 설정)
+- flex-basis : 어떤방향이든 너비가 동일하게됨 (방향성에 따라)
+- flex-grow : 여백을 나눠가짐 뒤에 값은 몇대몇대몇으로 나눌것인가의 값
+- flex-shrink : 기본적으로 1을 가지며(동일하게 줄어들고 늘어남)  0이 될 경우 고정
+- flex-wrap : nowrap  을 이용하여 한줄로 표현되다가 두번째줄로 내려가는걸 방지하여 오른쪽으로 스크롤을 할 수 있게 만들어줌
+
+축약표현
+- flex-grow:0;   flex-shrink: 0;  flex-basis : 100px;   ->  flex : 1 1 100px;
+
+## Ordering
+- 위치 정렬? 느낌 순서 정함 기본값 0
+
+## 박스 정렬 Alignment
+- 메인축에 해당하는 정렬 방식 justify - content
+- align-items : 수직 정렬  baseline 글자에 밑줄 맞춤 (각층 마다 )
+- align-content 수직내용 정렬에 사용 (하나로 묶음)
