@@ -22,7 +22,7 @@
 
 #body{
     
-    height: 300px;
+    height: inherit;
     background: black;
 }
 
@@ -31,16 +31,29 @@
     }
 
     #aside{
-        height: inherit;
+       
         width:205px;
         background: red;
     }
 
     #main{
-        height: inherit;
+        
         width: 750px;
         background: yellowgreen;
     }
+        #main-menu>ul{
+            display: flex;
+            flex-direction: row;
+        }
+            #main-menu>ul>li{
+                margin-left: 10px;
+                list-style: none;
+            }
+
+            #Route>ol{
+                display: flex;
+                flex-direction: row;
+            }
 
 #footer{
     height: 100px;
