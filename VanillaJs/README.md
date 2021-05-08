@@ -11,3 +11,15 @@
 - nums.slice(2,0,hoho);  -> 2번째에서 0개 날리고 hoho를 널어라  2,3,hoho,hello,7
 
 ## Json
+- ex) var exam = new Object();
+- exam.kor = 30;
+- exam.eng = 70;
+- exam.math = 80;
+- 아래와 같이 바꿀 수 있다.
+- var exam = {"kor" : 30, "eng" : 70, "math" : 80};
+
+### 문자열을 객체화 
+1. eval()
+-  ex) eval('var y = 30;');
+-      eval("var test = " + y + ";");
+2. jsonparser
