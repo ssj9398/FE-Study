@@ -17,9 +17,28 @@
 - exam.math = 80;
 - 아래와 같이 바꿀 수 있다.
 - var exam = {"kor" : 30, "eng" : 70, "math" : 80};
-
+- 꺼내서 쓸때
+- var data = {"n id" : 1, title : "aaa"}; 이렇게 되어있을때 
+- -> data.n id가 안되기 때문에 data["n id"]로 꺼내서 쓸 수 있다.
 ### 문자열을 객체화 
 1. eval()
 -  ex) eval('var y = 30;');
--      eval("var test = " + y + ";");
-2. jsonparser
+-     eval("var test = " + y + ";");
+2. JSON parser
+- ex) var data = JSON.parser('{"id" : 1, "title" : "aaa"}'); 꼭 id title에 쓴거처럼 키를 문자열""로 써야함
+- 그럼 문자열로 안되어 있는 구조 var data = {id : 2, title : "aaa"} 키를 문자열로 바꿔주려면
+- var json = JSON.stringify(data);로 써주면 키가 문자열로 자동으로 바뀜
+
+## 연산자
+1. ===, !==
+- 주소를 비교하게됨
+- ex) var x = 3;,   var y =3; 이라고 할 경우 같은 박스에 x,y값이 3이기 때문에 주소가 동일하고
+- var x 3, var y = new Number(3); 이라고 할 경우 y는 새로운 박스를 생성하기 때문에 주소가 틀려 false가 나옴
+2. 숫자와 문자 계산
+- 덧셈의 경우 숫자와 문자가 섞여 있을경우 문자로 바꿔버리는데 뺄셈의 경우 계산이 되버림
+
+## 제어구조
+- for in  (forin.html 참고)
+
+
+
