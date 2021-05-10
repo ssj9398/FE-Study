@@ -46,3 +46,14 @@
 - https://ssj9398.github.io/FE-Study/VanillaJs/function.html (참고url)
 
 
+## 변수의 가시영역과 global 객체 전역변수
+- var는 정적인 방식으로 생성,  글로벌 변수는 동적으로 생성
+
+## 클로저 (Closure)
+- 부모 function 쓸수있음
+
+## 브라우저 플랫폼 (alert, prompt, confirm, parseInt)   
+-     참고 url ( https://ssj9398.github.io/FE-Study/VanillaJs/prompt.html )
+- prompt -> 입력 받은게 무조건 문자열임
+
+## 
