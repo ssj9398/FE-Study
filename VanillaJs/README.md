@@ -53,7 +53,14 @@
 - 부모 function 쓸수있음
 
 ## 브라우저 플랫폼 (alert, prompt, confirm, parseInt)   
--     참고 url ( https://ssj9398.github.io/FE-Study/VanillaJs/prompt.html )
+- 참고 url ( https://ssj9398.github.io/FE-Study/VanillaJs/prompt.html )
 - prompt -> 입력 받은게 무조건 문자열임
 
-## 
+## 엘리먼트 객체 이용하기
+- input 태그, span태그는 onclick을 이용하여 idname.value로 값을 바꿀 수 있다.
+- span은 값을 넣어줄때 value가 아닌 innerText를 사용한다 왜냐 span은 value가 없으니까
+
+### 객체 생성과 사용 시점
+1. 스크립트를 아랫쪽에 작성한다.
+2. window.onload를 한다. (body.onload를 안하는 이유는 이미지 같은 것들은 body에서 로드가 안되기 때문에)
+- 참고 url ( https://ssj9398.github.io/FE-Study/VanillaJs/onclick.html )

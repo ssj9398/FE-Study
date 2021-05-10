@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="EUC-KR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="출력" id="button1">
+    <span id="span1" onclick=span();>span출력</span>
+    <span id="span-tag" onclick="idrule();">span출력</span>
+    <script>
+        function result() {
+            button1.value = "력출";
+        }
+        button1.onclick = result;
+
+        function span() {
+            span1.innerText = "력출naps"
+        }
+
+        function idrule() {
+            var SpanTag = document.getElementById("span-tag");
+            SpanTag.innerText = result;
+        }
+    </script>
+</body>
+
+</html>
