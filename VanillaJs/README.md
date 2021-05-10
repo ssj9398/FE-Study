@@ -38,7 +38,11 @@
 - 덧셈의 경우 숫자와 문자가 섞여 있을경우 문자로 바꿔버리는데 뺄셈의 경우 계산이 되버림
 
 ## 제어구조
-- for in  (forin.html 참고)
+- for in  https://ssj9398.github.io/FE-Study/VanillaJs/forin.html (참고url)
 
+## 함수 객체와 표현식
+- function 방법  (2번을 많이 씀)
+- 세가지 방법이 있음
+- https://ssj9398.github.io/FE-Study/VanillaJs/function.html (참고url)
 
 
