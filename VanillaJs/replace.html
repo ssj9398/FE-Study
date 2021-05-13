@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="EUC-KR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공백 변환</title>
+</head>
+
+<body>
+    <input id="text-id" onkeyup="if(window.event.keyCode==13){convert()}" type="text">
+    <input id="conversion-id" type="text">
+    <script>
+
+        var conversionid = document.getElementById('conversion-id');
+
+
+        function convert() {
+            var textid = document.getElementById('text-id').value;
+            textid = textid.replace(/(\s*)/g, "");
+            alert(textid);
+
+        }
+    </script>
+</body>
+
+</html>
