@@ -5,12 +5,26 @@
     <meta charset="EUC-KR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>kakaomapsearch</title>
 </head>
+<style>
+    body>.flex {
+        display: flex;
+        list-style: none;
+    }
+</style>
 
 <body>
-    <div id="map" style="width:100%;height:350px;"></div>
+    <ul class="flex">
+        <li>
+            <p id="map" style=" width:400px;height:350px;"></p>
+        </li>
+        <li>
+            <p id="map2" style="width: 400px;height:350px;">dd</p>
+        </li>
+    </ul>
     <input type="text" id="text" onkeyup="if(window.event.keyCode==13){enterkey()}">
+
 
     <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=310c341c7809abcbf626f93327f5bbe8&libraries=services"></script>
@@ -30,6 +44,15 @@
         // 장소 검색 객체를 생성합니다
         var ps = new kakao.maps.services.Places();
 
+        var mapContainer2 = document.getElementById('map2'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+                level2: 3 // 지도의 확대 레벨
+            };
+
+        var map2 = new kakao.maps.Map(mapContainer2, mapOption);
+        map2.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+
         // 키워드로 장소를 검색합니다
         //ps.keywordSearch('', placesSearchCB);
 
@@ -42,6 +65,8 @@
         // 키워드 검색 완료 시 호출되는 콜백함수 입니다
         function placesSearchCB(data, status, pagination) {
             if (status === kakao.maps.services.Status.OK) {
+                document.getElementById("text").value = "";
+                //alert((document.getElementById("text").value) + "test");
 
                 // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
                 // LatLngBounds 객체에 좌표를 추가합니다
