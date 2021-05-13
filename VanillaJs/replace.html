@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <input id="text-id" onkeyup="if(window.event.keyCode==13){convert()}" type="text">
-    <input id="conversion-id" type="text">
+    <input id="text-id" onkeyup="if(window.event.keyCode==13){convert()}" type="text"><input id="conversion-id"
+        type="text">
+    <p>변환 할 문자 입력</p>
+
     <script>
-
-        var conversionid = document.getElementById('conversion-id');
-
-
         function convert() {
             var textid = document.getElementById('text-id').value;
             textid = textid.replace(/(\s*)/g, "");
-            document.getElementById('conversion-id').value = textid;
+
+            document.getElementById('conversion-id').value = "'" + textid + "'";
+
         }
     </script>
 </body>
