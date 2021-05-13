@@ -6,22 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공백 변환</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <input id="text-id" onkeyup="if(window.event.keyCode==13){convert()}" type="text">
-    <input id="conversion-id" type="text" value="">
+    <input id="conversion-id" type="text">
+    <!--<button onclick="copy()">복사</button>-->
     <p>변환 할 문자 입력</p>
 
     <script>
+
         function convert() {
             var textid = document.getElementById('text-id').value;
-            var ConversionId = document.getElementById('conversion-id');
+            ConversionId = document.getElementById('conversion-id');
 
             //textid = textid.replace(/(\s*)/g, " ");
             textid = textid.replace(/ +/g, "','");
             ConversionId.value = "'" + textid + "'";
+
+            ConversionId.select();
+            //copyText.setSelectionRange(0, 99999);
+            document.execCommand("Copy");
+
+            alert(ConversionId.value + "\n" + "복사완료");
+
         }
+
+        /* function copy() {
+            var copyText = ConversionId.value;
+
+            copyText.select();
+            //copyText.setSelectionRange(0, 99999);
+            document.execCommand("Copy");
+
+            alert(copyText + "복사되었습니다.");
+        } */
     </script>
 </body>
 
