@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공백 변환</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <input id="text-id" onkeyup="if(window.event.keyCode==13){convert()}" type="text">
-    <input id="conversion-id" type="text">
-    <!--<button onclick="copy()">복사</button>-->
-    <p>변환 할 문자 입력</p>
 
+<body>
+    <input id="text-id" onkeyup="if(window.event.keyCode==13){convert()}" type="text" placeholder="변환 할 문자 입력">
+    <input id="conversion-id" type="text" placeholder="변환된 문자 나옴">
+    <!--<button onclick="copy()">복사</button>-->
     <script>
 
         function convert() {
