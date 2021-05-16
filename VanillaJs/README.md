@@ -64,3 +64,6 @@
 1. 스크립트를 아랫쪽에 작성한다.
 2. window.onload를 한다. (body.onload를 안하는 이유는 이미지 같은 것들은 body에서 로드가 안되기 때문에)
 - 참고 url ( https://ssj9398.github.io/FE-Study/VanillaJs/onclick.html )
+
+## 스크립트 코드 지역화
+1. https://ssj9398.github.io/FE-Study/VanillaJs/script.html

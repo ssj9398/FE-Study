@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="EUC-KR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="클릭" id="btn-print">
+    <span id="span1">스팬</span>
+
+    <script>
+        /*
+                function result() {
+                    var btnPrint = document.getElementById("btn-print");
+        
+                    var x = prompt("x입력", 0);
+                    var y = prompt("y입력", 0);
+        
+                    x = parseInt(x);
+                    y = parseInt(y);
+        
+                    btnPrint.valeu = x + y;
+                    span1.innerText = x + y;
+                }
+        
+                function init() {
+                    var btnPrint = document.getElementById("btn-print");
+                    btnPrint.onclick = result;
+                }
+        
+                window.onload = init;
+        */
+        window.onload = function () {
+            var btnPrint = document.getElementById("btn-print");
+            btnPrint.onclick = function () {
+
+                var x = prompt("x입력", 0);
+                var y = prompt("y입력", 0);
+
+                x = parseInt(x);
+                y = parseInt(y);
+
+                btnPrint.valeu = x + y;
+                span1.innerText = x + y;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
