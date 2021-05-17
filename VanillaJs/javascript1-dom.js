@@ -2,9 +2,9 @@
 //Ex2 : 엘리먼트 선택 방법 개선하기
 window.addEventListener("load", function () {
     var section2 = document.getElementById("section2");
-    var LeftValue = section2.getElementsByClassName("left-value")[0];
-    var RightValue = section2.getElementsByClassName("right-value")[0];
-    var Sum = section2.getElementsByClassName("sum")[0];
+    var LeftValue = section2.getElementsByClassName("left-value2")[0];
+    var RightValue = section2.getElementsByClassName("right-value2")[0];
+    var Sum = section2.getElementsByClassName("sum2")[0];
 
     /* var section2 = document.getElementById("section2");
     var inputs = section2.getElementsByTagName("input");
