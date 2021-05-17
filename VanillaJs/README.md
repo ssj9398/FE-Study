@@ -67,3 +67,6 @@
 
 ## 스크립트 코드 지역화
 1. https://ssj9398.github.io/FE-Study/VanillaJs/script.html
+
+## 코드분리와 이벤트 바인딩 방법
+1. 
