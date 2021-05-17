@@ -69,4 +69,4 @@
 1. https://ssj9398.github.io/FE-Study/VanillaJs/script.html
 
 ## 코드분리와 이벤트 바인딩 방법
-1. 
+1. window.onload 이벤트 대신 window.addEventListener를 사용하게 되면 덮어쓰기가 아닌 누적이된다.
