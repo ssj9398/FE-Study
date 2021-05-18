@@ -1,4 +1,18 @@
 ﻿
+//Ex3 : Selectors API LEVEL1
+window.addEventListener("load", function () {
+    var section3 = document.getElementById("section3");
+    var LeftValue = section3.querySelector(".left-value3");
+    var RightValue = section3.querySelector("input[name='right-value3']");
+    var Sum = section3.querySelector(".sum3");
+
+    button3.onclick = function () {
+        var l = parseInt(LeftValue.value);
+        var r = parseInt(RightValue.value);
+        Sum.value = l + r;
+    }
+});
+
 //Ex2 : 엘리먼트 선택 방법 개선하기
 window.addEventListener("load", function () {
     var section2 = document.getElementById("section2");
