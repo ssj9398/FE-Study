@@ -70,3 +70,7 @@
 
 ## 코드분리와 이벤트 바인딩 방법
 1. window.onload 이벤트 대신 window.addEventListener를 사용하게 되면 덮어쓰기가 아닌 누적이된다.
+
+## childNodes, children
+1. children - 태그를 기준으로
+2. childNodes - 주석, 빈공백 즉 전체를 기준으로함
