@@ -7,9 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="javascript1-dom.js"></script>
+    <link rel="" type="" href="images/img1.jpg">
 </head>
 
 <body>
+    <section id="section5">
+        <h1> Ex5 : 엘리먼트 노드의 속성 변경</h1>
+        <div class="box">
+            <input class="src-Input" type="text" list="img-list">
+            <datalist id="img-list">
+                <option value="img1.jpg">img1</option>
+                <option value="img2.jpg">img2</option>
+                <option value="img3.jpg">img3</option>
+            </datalist>
+            <select class="img-select">
+                <option value="img1.jpg">img1</option>
+                <option value="img2.jpg">img2</option>
+                <option value="img3.jpg">img3</option>
+            </select>
+            <button class="change-button" type="">변경하기</button>
+        </div>
+        <div>
+            <img class="img" src="images/img1.jpg" alt="" />
+        </div>
+    </section>
+    <hr />
+
     <section id="section4">
         <h1> Ex4 : ChildNodes를 이용한 노드 선택</h1>
         <div class="box">
