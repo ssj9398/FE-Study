@@ -1,15 +1,19 @@
 ﻿
-//Ex5 : Ex5 : 엘리먼트 노드의 속성 변경
+//Ex5 : 엘리먼트 노드의 속성 & CSS 변경
 window.addEventListener("load", function () {
     var section = document.querySelector("#section5");
     var srcInput = section.querySelector(".src-Input");
     var changeButton = section.querySelector(".change-button");
     var img = section.querySelector(".img");
     var imgselect = section.querySelector(".img-select");
+    var colorInput = section.querySelector(".color-input");
 
     changeButton.onclick = function () {
         img.src = "images/" + srcInput.value;
+        //img.style["border-color"] = colorInput.value;
+        img.style.borderColor = colorInput.value;
         //img.src = "images/" + imgselect.value;
+        console.log(img.className);
     }
 });
 
