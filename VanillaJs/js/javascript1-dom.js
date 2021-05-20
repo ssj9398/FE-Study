@@ -50,7 +50,8 @@ window.addEventListener("load", function () {
 
         div.appendChild(imageNode);
         imageNode.src = "images/" + srcInput.value;
-        imageNode.style.borderColor = colorInput.value;
+        imageNode.style.color = colorInput.value;
+        //imageNode.style.borderColor = colorInput.value;
         imageNode.style.border = "5px solid";
 
     };
