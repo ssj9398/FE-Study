@@ -1,5 +1,5 @@
 ﻿
-//Ex6 : 엘리먼트 노드의 속성 & CSS 속성 변경
+//Ex6 - 노드 조작 : 메뉴추가(createTextNode, Element)
 window.addEventListener("load", function () {
     var section = document.querySelector("#section6");
     var titleInput = document.querySelector(".title-input");
