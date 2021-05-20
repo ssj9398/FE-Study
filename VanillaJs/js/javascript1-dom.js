@@ -27,22 +27,38 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
     var section = document.querySelector("#section5");
     var srcInput = section.querySelector(".src-Input");
-    var changeButton = section.querySelector(".change-button");
+    var addButton = section.querySelector(".add-button");
+    var delButton = section.querySelector(".del-button");
     var img = section.querySelector(".img");
     var imgselect = section.querySelector(".img-select");
     var colorInput = section.querySelector(".color-input");
+    var div = document.querySelector(".image-node");
 
     //var txt = document.createTextNode("추가할 텍스트 노드");
     //var div = document.querySelector(".box");
     //div.appendChild(txt);
 
-    changeButton.onclick = function () {
-        img.src = "images/" + srcInput.value;
+    addButton.onclick = function () {
+        var imageNode = document.createElement('img');
+        var div = document.querySelector(".image-node");
+
+        //img.src = "images/" + srcInput.value;
         //img.style["border-color"] = colorInput.value;
-        img.style.borderColor = colorInput.value;
+
         //img.src = "images/" + imgselect.value;
         console.log(img.className);
-    }
+
+        div.appendChild(imageNode);
+        imageNode.src = "images/" + srcInput.value;
+        imageNode.style.borderColor = colorInput.value;
+        imageNode.style.border = "5px solid";
+
+    };
+
+    delButton.onclick = function () {
+        var imageNode = div.lastChild;
+        div.removeChild(imageNode);
+    };
 });
 
 //Ex4 : ChildNodes를 이용한 노드 선택
