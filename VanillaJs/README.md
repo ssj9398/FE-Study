@@ -74,3 +74,10 @@
 ## childNodes, children
 1. children - 태그를 기준으로
 2. childNodes - 주석, 빈공백 즉 전체를 기준으로함
+
+## 텍스트 노드를 동적으로 추가/삭제
+1. 노드 추가하기
+- 텍스트 노드 생성 (var txt = document.createTextNode("텍스트 노드");)
+- 텍스트 노드를 추가할 엘리먼트 노드 선택 (var div1 = document.getElementById("div1");)
+- 엘리먼트 노드에 텍스트 노드 추가하기
+div1.appendChild(txt);

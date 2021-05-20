@@ -1,4 +1,28 @@
 ﻿
+//Ex6 : 엘리먼트 노드의 속성 & CSS 속성 변경
+window.addEventListener("load", function () {
+    var section = document.querySelector("#section6");
+    var titleInput = document.querySelector(".title-input");
+    var menuList = document.querySelector(".menu-list");
+    var addButton = document.querySelector(".add-button");
+    var delButton = document.querySelector(".del-button");
+
+    addButton.onclick = function () {
+        var title = titleInput.value;
+        var txtNode = document.createTextNode(title);
+
+        menuList.appendChild(txtNode);
+
+    };
+
+    delButton.onclick = function () {
+        var txtNode = menuList.childNodes[0];
+        menuList.removeChild(txtNode);
+
+    };
+
+});
+
 //Ex5 : 엘리먼트 노드의 속성 & CSS 변경
 window.addEventListener("load", function () {
     var section = document.querySelector("#section5");
@@ -7,6 +31,10 @@ window.addEventListener("load", function () {
     var img = section.querySelector(".img");
     var imgselect = section.querySelector(".img-select");
     var colorInput = section.querySelector(".color-input");
+
+    //var txt = document.createTextNode("추가할 텍스트 노드");
+    //var div = document.querySelector(".box");
+    //div.appendChild(txt);
 
     changeButton.onclick = function () {
         img.src = "images/" + srcInput.value;
