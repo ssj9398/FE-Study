@@ -81,3 +81,13 @@
 - 텍스트 노드를 추가할 엘리먼트 노드 선택 (var div1 = document.getElementById("div1");)
 - 엘리먼트 노드에 텍스트 노드 추가하기
 div1.appendChild(txt);
+
+## 엘리먼트 노드 추가, 삭제
+1. 추가
+- appendChild, append, innerHTML
+2. 삭제
+- removeChild, remove
+
+* childNodes - 모든 노드가 기준
+* children - 엘리먼트가 기준
+* append를 이용해 텍스트 노드를 쉽게 추가 할 수 있다.

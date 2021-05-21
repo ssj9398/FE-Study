@@ -3,22 +3,43 @@
 window.addEventListener("load", function () {
     var section = document.querySelector("#section6");
     var titleInput = document.querySelector(".title-input");
-    var menuList = document.querySelector(".menu-list");
+    var menuListUl = document.querySelector(".menu-list");
     var addButton = document.querySelector(".add-button");
     var delButton = document.querySelector(".del-button");
 
+
     addButton.onclick = function () {
         var title = titleInput.value;
-        var txtNode = document.createTextNode(title);
+        //menuListUl.innerHTML += '<li><a href="">' + title + '</a></li>';
+        var html = '<a href="">' + title + '</a>';
+        var li = document.createElement("li");
+        li.innerHTML = html;
 
-        menuList.appendChild(txtNode);
+        //menuListUl.appendChild(li);
+        menuListUl.append(title);
+        /* var title = titleInput.value;
+        var txtNode = document.createTextNode(title);
+        var aNode = document.createElement("a");
+        var liNode = document.createElement("li");
+        aNode.href = "";
+        liNode.append(aNode);
+
+        menuListUl.append(liNode);
+        liNode.append(txtNode); */
+
+        //menuListUl.appendChild(txtNode);
+
+        /* var title = titleInput.value;
+         var txtNode = document.createTextNode(title);
+         menuList.appendChild(txtNode);*/
 
     };
 
     delButton.onclick = function () {
-        var txtNode = menuList.childNodes[0];
-        menuList.removeChild(txtNode);
-
+        var txtNode = menuListUl.children[0];
+        //menuListUl.removeChild(txtNode);
+        var liNode = menuListUl.children[0];
+        liNode.remove();
     };
 
 });
