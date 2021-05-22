@@ -1,4 +1,66 @@
 ﻿
+
+//Ex7 - 노드 복제와 템플릿 태그
+window.addEventListener("load", function () {
+    var notices = [
+        { id: 5, title: "제목1", regDate: "2021-05-23-1", writerId: "newlec", hit: "11" },
+        { id: 6, title: "제목2", regDate: "2021-05-23-2", writerId: "newlec", hit: "22" }
+    ]
+
+    var section = document.querySelector("#section7");
+
+    var cloneButton = section.querySelector(".clone-button");
+    var templateButton = section.querySelector(".template-button");
+    var noticeList = section.querySelector(".notice-list");
+    var tbodyNode = section.querySelector("tbody");
+
+
+    cloneButton.onclick = function () {
+        for (var i = 0; i < 2; i++) {
+            var trNode = noticeList.querySelector("tbody tr");
+            var cloneNode = trNode.cloneNode(true);
+            var tds = cloneNode.querySelectorAll("td");
+
+            tds[0].textContent = notices[i].id;
+            tds[1].innerHTML = '<a href="' + notices[i].id + '">' + notices[i].title + '</a>';
+            tds[2].textContent = notices[i].regDate;
+            tds[3].textContent = notices[i].writerId;
+            tds[4].textContent = notices[i].hit;
+            console.log(tds[0].textContent);
+            console.log(tds[1].innerHTML);
+            console.log(tds[2].textContent);
+            console.log(tds[3].textContent);
+            console.log(tds[4].textContent);
+            tbodyNode.append(cloneNode);
+        }
+
+
+    };
+    templateButton.onclick = function () {
+        var template = document.querySelector("template");
+        console.log(template);
+
+        var cloneNode = document.importNode(template.content, true);
+        var tds = cloneNode.querySelectorAll("td");
+
+        tds[0].textContent = notices[0].id;
+        tds[1].innerHTML = '<a href="' + notices[0].id + '">' + notices[0].title + '</a>';
+        tds[2].textContent = notices[0].regDate;
+        tds[3].textContent = notices[0].writerId;
+        tds[4].textContent = notices[0].hit;
+        console.log(tds[0].textContent);
+        console.log(tds[1].innerHTML);
+        console.log(tds[2].textContent);
+        console.log(tds[3].textContent);
+        console.log(tds[4].textContent);
+
+        console.log(cloneNode);
+        tbodyNode.appendChild(cloneNode);
+    };
+
+
+});
+
 //Ex6 - 노드 조작 : 메뉴추가(createTextNode, Element)
 window.addEventListener("load", function () {
     var section = document.querySelector("#section6");
