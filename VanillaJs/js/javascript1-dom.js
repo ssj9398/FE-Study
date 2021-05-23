@@ -1,4 +1,42 @@
 ﻿
+//Ex8 - 노드 삽입과 바꾸기
+window.addEventListener("load", function () {
+
+    var section = document.querySelector("#section8");
+    var downButton = section.querySelector(".down-button");
+    var upButton = section.querySelector(".up-Button");
+    var noticeList = section.querySelector("notice-list");
+    var tbodyNode = section.querySelector("tbody");
+
+    var currentNode = tbodyNode.firstElementChild;//.children[0];
+
+    downButton.onclick = function () {
+        var nextNode = currentNode.nextElementSibling;
+
+        if (nextNode == null) {
+            alert("더이상 이동 불가");
+            return;
+        }
+        //tbodyNode.removeChild(nextNode);
+        //tbodyNode.insertBefore(nextNode, currentNode);
+        currentNode.insertAdjacentElement("beforebegin", nextNode);
+    };
+
+    upButton.onclick = function () {
+        var preNode = currentNode.previousSibling;
+        if (preNode == null) {
+            alert("더이상 이동 불가");
+            return;
+        }
+        //tbodyNode.removeChild(currentNode);
+        //tbodyNode.insertBefore(currentNode, preNode);
+        currentNode.insertAdjacentElement("afterend", preNode);
+        console.log(currentNode);
+        console.log(preNode);
+
+    };
+})
+
 
 //Ex7 - 노드 복제와 템플릿 태그
 window.addEventListener("load", function () {
@@ -16,16 +54,18 @@ window.addEventListener("load", function () {
 
 
     cloneButton.onclick = function () {
-        for (var i = 0; i < 2; i++) {
+        for (var i = 0; i < notices.length; i++) {
             var trNode = noticeList.querySelector("tbody tr");
             var cloneNode = trNode.cloneNode(true);
             var tds = cloneNode.querySelectorAll("td");
 
             tds[0].textContent = notices[i].id;
-            tds[1].innerHTML = '<a href="' + notices[i].id + '">' + notices[i].title + '</a>';
+            //tds[1].innerHTML = '<a href="' + notices[i].id + '">' + notices[i].title + '</a>';
+            tds[1].innerHTML = '<input type="text">' + '';
             tds[2].textContent = notices[i].regDate;
             tds[3].textContent = notices[i].writerId;
             tds[4].textContent = notices[i].hit;
+
             console.log(tds[0].textContent);
             console.log(tds[1].innerHTML);
             console.log(tds[2].textContent);
