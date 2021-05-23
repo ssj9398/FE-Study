@@ -1,4 +1,46 @@
 ﻿
+//Ex9 - 다중 노드선택 방법과 일괄삭제, 노드의 자리 바꾸기
+window.addEventListener("load", function () {
+
+    var section = document.querySelector("#section9");
+
+    var noticeList = section.querySelector("notice-list");
+    var tbody = section.querySelector("tbody");
+    var allCheckbox = section.querySelector(".overall-checkbox");
+    var delButton = section.querySelector(".del-button2");
+    var swapButton = section.querySelector(".swap-button");
+
+
+
+    allCheckbox.onchange = function () {
+        var inputs = tbody.querySelectorAll("input[type='checkbox']");
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].checked = allCheckbox.checked;
+
+        }
+
+        console.log(allCheckbox.value)
+        console.log(allCheckbox.checked);
+
+    };
+
+    delButton.onclick = function () {
+        var inputs = tbody.querySelectorAll("input[type='checkbox']");
+        //var inputs = tbody.querySelectorAll("input[type='checkbox']:checked");
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].checked) {
+                inputs[i].parentElement.parentElement.remove();
+            }
+        };
+    }
+
+    swapButton.onclick = function () {
+
+    };
+
+
+})
+
 //Ex8 - 노드 삽입과 바꾸기
 window.addEventListener("load", function () {
 
