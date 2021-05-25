@@ -1,4 +1,70 @@
 ﻿
+//Ex10 - 다중 노드선택 방법과 일괄삭제, 노드의 자리 바꾸기
+window.addEventListener("load", function () {
+
+    var notices = [
+        { id: 1, title: "자바스크립트란..", regDate: "2021-05-23-1", writerId: "newlec", hit: "11" },
+        { id: 2, title: "유투브란", regDate: "2021-05-23-2", writerId: "newlec", hit: "11" },
+        { id: 3, title: "기본기란", regDate: "2021-05-23-3", writerId: "newlec", hit: "11" },
+        { id: 4, title: "조회수란", regDate: "2021-05-23-4", writerId: "newlec", hit: "22" }
+    ];
+
+    var section = document.querySelector("#section10");
+
+    var noticeList = section.querySelector(".notice-list");
+    var titleId = section.querySelector(".title");
+    var tbodyNode = noticeList.querySelector("tbody");
+
+    var bindData = () => {
+        var template = document.querySelector("template");
+        console.log(template);
+        for (var i = 0; i < notices.length; i++) {
+            var cloneNode = document.importNode(template.content, true);
+            var tds = cloneNode.querySelectorAll("td");
+
+            tds[0].textContent = notices[i].id;
+            //tds[1].innerHTML = '<a href="' + notices[0].id + '">' + notices[0].title + '</a>';
+            var aNode = tds[1].children[0];
+            aNode.href = notices[i].id;
+            aNode.textContent = notices[i].title;
+
+            tds[2].textContent = notices[i].regDate;
+            tds[3].textContent = notices[i].writerId;
+            tds[4].textContent = notices[i].hit;
+
+            tbodyNode.appendChild(cloneNode);
+        }
+    };
+
+    bindData();
+
+    var titleSorted = false;
+
+    titleId.onclick = () => {
+
+        tbodyNode.innerHTML = "";
+
+        if (!titleSorted)
+
+            notices.sort(function (a, b) {
+                titleSorted = true;
+                if (a.title < b.title)
+                    return -1;
+                else if (a.title > b.title)
+                    return 1;
+                else
+                    return 0;
+
+            });
+
+        notices.reverse();
+        bindData();
+
+
+    };
+
+});
+
 //Ex9 - 다중 노드선택 방법과 일괄삭제, 노드의 자리 바꾸기
 window.addEventListener("load", function () {
 
@@ -54,7 +120,7 @@ window.addEventListener("load", function () {
     };
 
 
-})
+});
 
 //Ex8 - 노드 삽입과 바꾸기
 window.addEventListener("load", function () {

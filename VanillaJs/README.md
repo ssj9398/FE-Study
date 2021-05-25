@@ -91,3 +91,6 @@ div1.appendChild(txt);
 * childNodes - 모든 노드가 기준
 * children - 엘리먼트가 기준
 * append를 이용해 텍스트 노드를 쉽게 추가 할 수 있다.
+
+## 제목으로 내용 정렬하기
+- https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
