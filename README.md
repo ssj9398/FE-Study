@@ -400,3 +400,5 @@ div1.appendChild(txt);
 ### 제목으로 내용 정렬하기
 - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 
+### 선택된 이미지 보여주기
+- event target
