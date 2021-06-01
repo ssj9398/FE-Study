@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="" type="" href="../replace&nbsp.js">
+</head>
+
+<body>
+    <input id="pre-text" onkeyup="if(window.event.keyCode==13){convert()}" type="text" placeholder="변환 할 문자 입력">
+    <input id="aft-text" type="text" placeholder="변환된 문자 나옴">
+</body>
+<script type="text/javascript">
+    function convert() {
+        var preText = document.querySelector("#pre-text").value;
+        var aftText = document.querySelector("#aft-text");
+
+        console.log("a");
+        if (window.event.keyCode == 13) {
+            preText = preText.replace(/&nbsp;/gi, "");
+            aftText.value = preText;
+            aftText.select();
+            //copyText.setSelectionRange(0, 99999);
+            document.execCommand("Copy");
+
+        }
+    }
+</script>
+
+</html>
