@@ -1,4 +1,18 @@
 ﻿
+//Ex11 - 연습문제1 - 선택된 레코드 삭제하기 : event target
+window.addEventListener("load", function () {
+
+    var section = document.querySelector("#section11");
+    var delButton = section.querySelectorAll(".del-button2");
+    for (var i = 0; i < delButton.length; i++) {
+        delButton[i].onclick = function (e) {
+            var tr = e.target.parentElement.parentElement;
+            tr.remove();
+        }
+    }
+
+});
+
 //Ex1 : 선택된 이미지 보여주기 : event target
 
 window.addEventListener("load", () => {
