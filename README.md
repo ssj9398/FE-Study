@@ -166,11 +166,13 @@
 ### 단일 Element
 1. document.getElementById("아이디명");
 - 아이디명이라는 id 태그를 통째로 가져온다.
+```
 - ex) <p style="color:red;" src="test"></p> 
 - t = document.getElementById("아이디명");
 - t.innerHTML p태그 안에 태그 및 내용가 보여지고 ex) <strong>
 - t.innerTEXT 텍스트만 보여짐
 - t.getAttribut="src값" 하면 값을 가져올 수 있음 (속성)
+```
 
 
 
@@ -199,11 +201,13 @@
 - $("html, body").animate({ scrollTop: document.body.scrollHeight }, "slow");  가장 아래로 천천히 이동
 
 ### Element 추가/삭제
+```
 1. 생성 : test = document.createElement("test");
 2. 추가 : document.body.appendChild(test);
 3. 원하는위치에 추가 : document.body.insertBefor( test, document.body.children[3]); 태그명, 위치
 4. Element 복사 : test2 = test.cloneNode();    document.body.insertBefor( test2, document.body.children[6]);
 5. 삭제 : document.body.removeChild(test2);
+```
 
 
 
@@ -316,10 +320,12 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
 - nums.slice(2,0,hoho);  -> 2번째에서 0개 날리고 hoho를 널어라  2,3,hoho,hello,7
 
 ### Json
+```
 - ex) var exam = new Object();
 - exam.kor = 30;
 - exam.eng = 70;
 - exam.math = 80;
+```
 - 아래와 같이 바꿀 수 있다.
 - var exam = {"kor" : 30, "eng" : 70, "math" : 80};
 - 꺼내서 쓸때
@@ -327,10 +333,15 @@ addEventListener는 여러개의 event handler를 추가하기 때문에 a,b fun
 - -> data.n id가 안되기 때문에 data["n id"]로 꺼내서 쓸 수 있다.
 ### 문자열을 객체화 
 1. eval()
+```
 -  ex) eval('var y = 30;');
 -     eval("var test = " + y + ";");
+```
 2. JSON parser
-- ex) var data = JSON.parser('{"id" : 1, "title" : "aaa"}'); 꼭 id title에 쓴거처럼 키를 문자열""로 써야함
+```
+- ex) var data = JSON.parser('{"id" : 1, "title" : "aaa"}'); 
+```
+- 꼭 id title에 쓴거처럼 키를 문자열""로 써야함
 - 그럼 문자열로 안되어 있는 구조 var data = {id : 2, title : "aaa"} 키를 문자열로 바꿔주려면
 - var json = JSON.stringify(data);로 써주면 키가 문자열로 자동으로 바뀜
 
