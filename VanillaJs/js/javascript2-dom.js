@@ -1,4 +1,18 @@
 ﻿
+//Ex4 - 서로 다른 기능의 여러 버튼을 가진 화면에서 이벤트를 처리하는 방법
+window.addEventListener("load", () => {
+
+    var section = document.querySelector("#section2-1");
+    var delButtonList = section.querySelector(".notice-list");
+
+    delButtonList.onclick = (e) => {
+        console.log(e.target.parentElement);
+        var tr = e.target.parentElement.parentElement;
+        tr.remove();
+    }
+});
+
+
 //Ex3 연습문제 : 버블링을 이용한 사용자 이벤트 처리하기
 
 window.addEventListener("load", () => {
