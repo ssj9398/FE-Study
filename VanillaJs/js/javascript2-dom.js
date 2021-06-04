@@ -2,14 +2,29 @@
 //Ex4 - 서로 다른 기능의 여러 버튼을 가진 화면에서 이벤트를 처리하는 방법
 window.addEventListener("load", () => {
 
-    var section = document.querySelector("#section2-1");
-    var delButtonList = section.querySelector(".notice-list");
+    var section = document.querySelector("#section4");
+    var noticeList = section.querySelector(".notice-list");
+    var selButton = section.querySelector(".sel-button1");
+    var chaButton = section.querySelector(".cha-button1");
+    var delButton = section.querySelector(".notice-list");
 
-    delButtonList.onclick = (e) => {
-        console.log(e.target.parentElement);
+
+    noticeList.onclick = (e) => {
+        e.stopPropagation();
+        console.log(tdNode);
+    };
+
+    chaButton.onclick = (e) => {
+        e.stopPropagation();
+        console.log("b");
+    };
+
+    delButton.onclick = (e) => {
+        e.stopPropagation();
         var tr = e.target.parentElement.parentElement;
         tr.remove();
-    }
+        console.log("c");
+    };
 });
 
 
