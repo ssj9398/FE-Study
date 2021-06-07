@@ -3,28 +3,27 @@
 window.addEventListener("load", () => {
 
     var section = document.querySelector("#section4");
-    var noticeList = section.querySelector(".notice-list");
-    var selButton = section.querySelector(".sel-button1");
-    var chaButton = section.querySelector(".cha-button1");
-    var delButton = section.querySelector(".notice-list");
+    var tbody = section.querySelector(".notice-list tbody");
+    tbody.onclick = (e) => {
+        var target = e.target;
+        if (target.nodeName != "INPUT")
+            return;
+        if (target.classList.contains("sel-button1")) {
+            var tr = target.parentElement;
+            for (; tr.nodeName != "TR"; tr = tr.parentElement);
+            tr.style.background = "yellow";
+        }
+        else if (target.classList.contains("edit-button")) {
 
+        }
 
-    noticeList.onclick = (e) => {
-        e.stopPropagation();
-        console.log(tdNode);
+        else if (target.classList.contains("del-button")) {
+
+        }
+
     };
 
-    chaButton.onclick = (e) => {
-        e.stopPropagation();
-        console.log("b");
-    };
 
-    delButton.onclick = (e) => {
-        e.stopPropagation();
-        var tr = e.target.parentElement.parentElement;
-        tr.remove();
-        console.log("c");
-    };
 });
 
 
