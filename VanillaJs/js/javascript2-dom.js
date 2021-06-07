@@ -5,8 +5,10 @@ window.addEventListener("load", () => {
     var section = document.querySelector("#section4");
     var tbody = section.querySelector(".notice-list tbody");
     tbody.onclick = (e) => {
+
+        e.preventDefault();
         var target = e.target;
-        if (target.nodeName != "INPUT")
+        if (target.nodeName != "A")
             return;
         if (target.classList.contains("sel-button1")) {
             var tr = target.parentElement;
