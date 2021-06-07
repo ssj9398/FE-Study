@@ -1,9 +1,14 @@
-#conversion-id{
-    width:500px; 
-    height:500px;
+#conversion-id {
+    width : 500px;
+    height: 500px;
 }
 
-#text-id{
-    width:500px; 
-    height:500px;
+#text-id {
+    width : 500px;
+    height: 500px;
+}
+
+.img {
+    width : 100px;
+    height: 100px;
 }
