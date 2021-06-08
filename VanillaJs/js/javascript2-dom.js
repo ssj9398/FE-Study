@@ -1,4 +1,22 @@
-﻿
+﻿//Ex6 - 마우스 이베트 객체 : 마우스 좌표
+
+window.addEventListener("load", () => {
+    var section = document.querySelector("#section6");
+    var container = section.querySelector("#container");
+    var box = section.querySelector(".box");
+
+    container.onclick = (e) => {
+        console.log(e.x + "," + e.y);
+        box.style.position = "absolute";
+        box.style.left = e.x + "px";
+        box.style.top = e.y + "px";
+    };
+
+
+});
+
+
+
 //Ex5 - 이벤트 트리거
 window.addEventListener("load", () => {
     var section = document.querySelector("#section5");
