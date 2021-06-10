@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
     console.log(left);
     console.log(top);
 
-    document.onmousedown = (e) => {
+    section.onmousedown = (e) => {
         if (e.target.classList.contains("box")) {
             dragging = true;
             current = e.target;
@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
 
     };
 
-    document.onmousemove = (e) => {
+    section.onmousemove = (e) => {
         if (!dragging) return;
 
 
@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
 
     };
 
-    document.onmouseup = (e) => {
+    section.onmouseup = (e) => {
         dragging = false;
     };
 
