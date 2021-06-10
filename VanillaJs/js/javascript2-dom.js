@@ -1,4 +1,73 @@
-﻿//Ex7 - 마우스 이베트 객체 : 드래그 방식으로 박스 옮기기
+﻿//Ex8 - 마우스 이베트 객체 : 여러개 박스 드래그 방식으로 옮기기
+
+window.addEventListener("load", () => {
+    var section = document.querySelector("#section8");
+    var container = section.querySelector("#container");
+    var box = section.querySelectorAll(".box");
+    var dragging = false;
+    var offset = { x: 0, y: 0 };
+    var current = null;
+
+    container.onmousedown = (e) => {
+        if (e.target.classList.contains("box")) {
+            dragging = true;
+            current = e.target;
+            offset.y = e.offsetY;
+            offset.x = e.offsetX;
+            console.log(offset.y + "," + offset.x);
+        }
+
+    };
+
+    container.onmousemove = (e) => {
+        if (!dragging) return;
+        current.style.left = (e.x - offset.x) + "px";
+        current.style.top = (e.y - offset.y) + "px";
+        console.log(current.style.left + "," + current.style.top);
+    };
+
+    container.onmouseup = (e) => {
+        dragging = false;
+    };
+
+
+});
+
+
+
+//Ex7 - 마우스 이베트 객체 : 드래그 방식으로 박스 옮기기
+
+window.addEventListener("load", () => {
+    var section = document.querySelector("#section7");
+    var container = section.querySelector("#container");
+    var box = section.querySelector(".box");
+    var dragging = false;
+    var offset = { x: 0, y: 0 };
+
+    container.onmousedown = (e) => {
+        if (e.target === box)
+            dragging = true;
+    };
+
+    container.onmousemove = (e) => {
+        if (!dragging) return;
+        box.style.left = (e.x - offset.x) + "px";
+        box.style.top = (e.y - offset.y) + "px";
+    };
+
+    container.onmouseup = (e) => {
+        dragging = false;
+    };
+
+    box.onmousedown = (e) => {
+        offset.x = e.offsetX;
+        offset.y = e.offsetY;
+    };
+
+});
+
+
+//Ex7 - 마우스 이베트 객체 : 드래그 방식으로 박스 옮기기
 
 window.addEventListener("load", () => {
     var section = document.querySelector("#section7");
