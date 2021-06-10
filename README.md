@@ -413,3 +413,7 @@ div1.appendChild(txt);
 
 ### 선택된 이미지 보여주기
 - event target
+
+### 마우스 이벤트
+1. offset
+- 클릭한 영역을 기준으로한 좌표

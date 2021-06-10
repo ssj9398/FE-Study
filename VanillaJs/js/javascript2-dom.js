@@ -1,4 +1,36 @@
-﻿//Ex6 - 마우스 이베트 객체 : 마우스 좌표
+﻿//Ex7 - 마우스 이베트 객체 : 드래그 방식으로 박스 옮기기
+
+window.addEventListener("load", () => {
+    var section = document.querySelector("#section7");
+    var container = section.querySelector("#container");
+    var box = section.querySelector(".box");
+    var dragging = false;
+    var offset = { x: 0, y: 0 };
+
+    container.onmousedown = (e) => {
+        if (e.target === box)
+            dragging = true;
+    };
+
+    container.onmousemove = (e) => {
+        if (!dragging) return;
+        box.style.left = (e.x - offset.x) + "px";
+        box.style.top = (e.y - offset.y) + "px";
+    };
+
+    container.onmouseup = (e) => {
+        dragging = false;
+    };
+
+    box.onmousedown = (e) => {
+        offset.x = e.offsetX;
+        offset.y = e.offsetY;
+    };
+
+});
+
+
+//Ex6 - 마우스 이베트 객체 : 마우스 좌표
 
 window.addEventListener("load", () => {
     var section = document.querySelector("#section6");
@@ -7,6 +39,9 @@ window.addEventListener("load", () => {
 
     container.onclick = (e) => {
         console.log(e.x + "," + e.y);
+        console.log("client :" + e.clientX + "," + e.clientY);
+        console.log("page :" + e.pageX + "," + e.pageY);
+        console.log("offset :" + e.offsetX + "," + e.offsetY);
         box.style.position = "absolute";
         box.style.left = e.x + "px";
         box.style.top = e.y + "px";
